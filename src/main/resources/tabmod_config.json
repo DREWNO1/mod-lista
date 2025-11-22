@@ -1,0 +1,6 @@
+{
+  "style": "minimal",
+  "header": ["", "WHITELISTA SERWERA", "Status graczy + statystyki", ""],
+  "footer": ["", "Minecraft Server • Fabric 1.20.1", ""],
+  "update_interval_ticks": 40
+}
