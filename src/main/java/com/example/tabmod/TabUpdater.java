@@ -1,7 +1,7 @@
 package com.example.tabmod;
 
 import com.google.gson.*;
-import net.minecraft.network.packet.s2c.play.ClientboundTabListPacket;
+import net.minecraft.network.packet.s2c.play.PlayerListHeaderS2CPacket;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
@@ -129,7 +129,7 @@ public class TabUpdater {
                 viewer.sendMessage(Text.literal(line), false);
             }
 
-            ClientboundTabListPacket packet = new ClientboundTabListPacket(header, footer);
+            PlayerListHeaderS2CPacket packet = new PlayerListHeaderS2CPacket(header, footer);
             viewer.networkHandler.sendPacket(packet);
         }
     }
